@@ -81,6 +81,7 @@ public class ApplicantActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+          // Step 25 implemented on line 91 below
         Fragment contentFragment = null;
 
         if (id == R.id.family_member) {
@@ -88,8 +89,9 @@ public class ApplicantActivity extends AppCompatActivity
         }
         else if (id == R.id.profile){
             contentFragment = new ProfileFragment();
+            //Step 16 implemented on lines 86-90
         }
-
+         // Step 29 implemented on lines 94-98 below
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, contentFragment);
