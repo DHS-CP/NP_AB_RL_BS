@@ -24,4 +24,13 @@ public class Guardian {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    
+        //For 2.1.5 Job method
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
 }
